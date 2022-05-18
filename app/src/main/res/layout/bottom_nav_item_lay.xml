@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_cal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/bottomNavItemTopPadding"
+        android:transitionName="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cal" />
+
+    <ImageView
+        android:id="@+id/iv_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/bottomNavItemTopPadding"
+        android:transitionName="schedule"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cal"
+        app:layout_constraintEnd_toStartOf="@id/iv_focus"
+        app:layout_constraintStart_toEndOf="@id/iv_cal"
+        app:layout_constraintTop_toTopOf="@+id/iv_cal"
+        app:srcCompat="@drawable/ic_msg" />
+
+    <ImageView
+        android:id="@+id/iv_focus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/bottomNavItemTopPadding"
+        android:transitionName="winner"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_msg"
+        app:layout_constraintEnd_toStartOf="@id/iv_trpy"
+        app:layout_constraintStart_toEndOf="@id/iv_msg"
+        app:layout_constraintTop_toTopOf="@+id/iv_msg"
+        app:srcCompat="@drawable/ic_focus" />
+
+    <ImageView
+        android:id="@+id/iv_trpy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/bottomNavItemTopPadding"
+        android:transitionName="notification"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_focus"
+        app:layout_constraintEnd_toStartOf="@id/iv_person"
+        app:layout_constraintStart_toEndOf="@id/iv_focus"
+        app:layout_constraintTop_toTopOf="@+id/iv_focus"
+        app:srcCompat="@drawable/ic_tropy" />
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/bottomNavItemTopPadding"
+        android:transitionName="wallet"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_trpy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_trpy"
+        app:layout_constraintTop_toTopOf="@+id/iv_trpy"
+        app:srcCompat="@drawable/ic_person" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

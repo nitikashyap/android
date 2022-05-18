@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my_cal"
+        android:icon="@drawable/ic_cal"
+        android:title="Home" />
+    <item
+        android:id="@+id/my_msg"
+        android:icon="@drawable/ic_msg"
+        android:title="Home" />
+    <item
+        android:id="@+id/my_focus"
+        android:icon="@drawable/ic_focus"
+        android:title="Home" />
+    <item
+        android:id="@+id/my_try"
+        android:icon="@drawable/ic_tropy"
+        android:title="Home" />
+    <item
+        android:id="@+id/my_person"
+        android:icon="@drawable/ic_person"
+        android:title="Home" />
+</menu>
