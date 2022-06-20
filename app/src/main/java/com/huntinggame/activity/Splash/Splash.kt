@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.huntinggame.R
 import com.huntinggame.activity.Main.MainActivity
+import com.huntinggame.activity.PlayScreen.PlayScreen
 import com.huntinggame.databinding.ActivitySplashBinding
 
 class Splash : AppCompatActivity() {
@@ -17,7 +18,7 @@ class Splash : AppCompatActivity() {
         Handler().postDelayed(
             {
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, PlayScreen::class.java))
                 finish()
 
             }, 3000

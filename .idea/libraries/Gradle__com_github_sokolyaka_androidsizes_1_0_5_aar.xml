@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sokolyaka:androidsizes:1.0.5@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31eb26096aa98212c1a12f71c65dddbb/transformed/jetified-androidsizes-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/31eb26096aa98212c1a12f71c65dddbb/transformed/jetified-androidsizes-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31eb26096aa98212c1a12f71c65dddbb/transformed/jetified-androidsizes-1.0.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sokolyaka/androidsizes/1.0.5/2ca51f6dd4c2b29644aa3b01e10b1f1a6edb727e/androidsizes-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sokolyaka/androidsizes/1.0.5/83a88ae488b28eab6f7613e1a05b90ba75619fbb/androidsizes-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

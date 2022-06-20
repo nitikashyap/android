@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HuntingGame</string>
+    <string name="welcome_back_camera_hunter">Welcome Back Camera Hunter</string>
+    <string name="forget_password"><u>Forget password?</u></string>
+    <string name="create_one"><u>Create one</u></string>
+    <string name="login"><u>Login</u></string>
 </resources>
