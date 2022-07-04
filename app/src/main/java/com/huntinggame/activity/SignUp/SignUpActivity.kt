@@ -7,6 +7,7 @@ import android.view.View
 import com.huntinggame.R
 import com.huntinggame.activity.Login.LoginActivity
 import com.huntinggame.activity.ResetPassword.ResetPasswordActivity
+import com.huntinggame.activity.Verify.VerifyActivity
 import com.huntinggame.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -18,12 +19,12 @@ class SignUpActivity : BaseActivity(), View.OnClickListener {
         init()
         initControl()
         myObserver()
+
     }
 
     override fun init() {
 
     }
-
     override fun initControl() {
         ivSignUp.setOnClickListener(this)
         tvForgetPassword.setOnClickListener(this)
@@ -37,7 +38,7 @@ class SignUpActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0!!.id) {
             R.id.ivSignUp -> {
-                // startActivity(Intent(this,ResetPasswordActivity::class.java))
+                 startActivity(Intent(this,VerifyActivity::class.java))
             }
             R.id.tvForgetPassword -> {
                 startActivity(Intent(this, ResetPasswordActivity::class.java))

@@ -16,6 +16,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_cal" />
 
+<!--    <TextView-->
+<!--        android:id="@+id/test"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="himanshu"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_cal"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/iv_cal"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_cal" />-->
+
     <ImageView
         android:id="@+id/iv_msg"
         android:layout_width="0dp"
@@ -28,6 +38,14 @@
         app:layout_constraintTop_toTopOf="@+id/iv_cal"
         app:srcCompat="@drawable/ic_msg" />
 
+<!--    <TextView-->
+<!--        android:id="@+id/test1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="himanshu"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_msg"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_cal"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_msg" />-->
     <ImageView
         android:id="@+id/iv_focus"
         android:layout_width="0dp"
@@ -40,6 +58,15 @@
         app:layout_constraintTop_toTopOf="@+id/iv_msg"
         app:srcCompat="@drawable/ic_focus" />
 
+<!--    <TextView-->
+<!--        android:id="@+id/test11"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="himanshu"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_focus"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_msg"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_focus" />-->
+
     <ImageView
         android:id="@+id/iv_trpy"
         android:layout_width="0dp"
@@ -51,6 +78,15 @@
         app:layout_constraintStart_toEndOf="@id/iv_focus"
         app:layout_constraintTop_toTopOf="@+id/iv_focus"
         app:srcCompat="@drawable/ic_tropy" />
+<!--    <TextView-->
+<!--        android:id="@+id/test111"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="himanshu"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_trpy"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_focus"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_trpy" />-->
+
 
     <ImageView
         android:id="@+id/iv_person"
@@ -63,5 +99,13 @@
         app:layout_constraintStart_toEndOf="@id/iv_trpy"
         app:layout_constraintTop_toTopOf="@+id/iv_trpy"
         app:srcCompat="@drawable/ic_person" />
+<!--    <TextView-->
+<!--        android:id="@+id/test1111"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="himanshu"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_person"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/iv_trpy"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_person" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="service_10_imge_shapeable_overloay">
+        <item name="cornerSize">10%</item>
+
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#98E016</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/darkGreen
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/darkGreen
+        </item>
+    </style>
     <style name="normaltxt_25sp_bold">
         <item name="android:textSize">25sp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/acherusferal_bold</item>
+    </style>
+    <style name="normaltxt_25sp_Robotobold">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
     </style>
     <style name="normaltxt_24sp_bold">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/acherusferal_bold</item>
     </style>
-<!--    <style name="millaCilla_45sp">-->
-<!--        <item name="android:textSize">@dimen/sp_45</item>-->
-<!--        <item name="android:textColor">@color/black</item>-->
+    <style name="normaltxt_50sp">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/black</item>
 
-<!--        <item name="android:fontFamily">@font/gilroy_bold</item>-->
-<!--    </style>-->
+        <item name="android:fontFamily">@font/acherusferal_light</item>
+    </style>
 
     <style name="normaltxt_20sp_bold">
         <item name="android:textSize">20sp</item>
@@ -48,13 +74,26 @@
 
         <item name="android:fontFamily">@font/acherusferal_light</item>
     </style>
+    <style name="normaltxt_20sp_Robotolight">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_newlight</item>
+    </style>
+
 
     <style name="normaltxt_18sp_bold">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
 
         <item name="android:fontFamily">@font/acherusferal_bold</item>
-    </style>
+    </style><style name="normaltxt_18sp_RobotoRegular">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/black</item>
+
+    <item name="android:fontFamily">@font/roboto_regular</item>
+</style>
+
     <style name="normaltxt_18sp_Semibold">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
@@ -94,6 +133,19 @@
 
         <item name="android:fontFamily">@font/acherusferal_light</item>
     </style>
+    <style name="normaltxt_16sp_Regular">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/acherusferal_regular</item>
+    </style>
+    <style name="normaltxt_16sp_RobotoRegular">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
 
     <style name="normaltxt_16sp_Medium">
         <item name="android:textSize">16sp</item>
@@ -107,12 +159,25 @@
 
         <item name="android:fontFamily">@font/acherusferal_bold</item>
     </style>
+    <style name="normaltxt_16sp_Robotobold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
 
     <style name="normaltxt_14sp_bold">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/black</item>
 
         <item name="android:fontFamily">@font/acherusferal_bold</item>
+
+    </style>
+    <style name="normaltxt_14sp_Robotobold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_bold</item>
 
     </style>
     <style name="normaltxt_14sp_light">
@@ -143,6 +208,13 @@
         <item name="android:fontFamily">@font/acherusferal_regular</item>
 
     </style>
+    <style name="normaltxt_14sp_RobotoRegular">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+    </style>
 
     <style name="normaltxt_14sp_Semibold">
         <item name="android:textSize">14sp</item>
@@ -170,12 +242,25 @@
 
         <item name="android:fontFamily">@font/acherusferal_semibold</item>
     </style>
+    <style name="normaltxt_15spbold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/acherusferal_bold</item>
+    </style>
 
     <style name="normaltxt_15sp_Regular">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/black</item>
 
         <item name="android:fontFamily">@font/acherusferal_regular</item>
+
+    </style>
+    <style name="normaltxt_15sp_RobotoRegular">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
 
     </style>
     <style name="normaltxt_10sp_Regular">
@@ -189,6 +274,18 @@
         <item name="android:textColor">@color/black</item>
 
         <item name="android:fontFamily">@font/acherusferal_semibold</item>
+    </style>
+    <style name="normaltxt_12sp_bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/acherusferal_bold</item>
+    </style>
+    <style name="normaltxt_12sp_Robotobold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_bold</item>
     </style>
     <style name="normaltxt_12sp_Regular">
         <item name="android:textSize">12sp</item>
@@ -207,6 +304,12 @@
         <item name="android:textColor">@color/black</item>
 
         <item name="android:fontFamily">@font/acherusferal_medium</item>
+    </style>
+    <style name="normaltxt_12sp_RobotoRegular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
     <style name="normaltxt_13sp_Regular">
         <item name="android:textSize">13sp</item>
@@ -245,6 +348,12 @@
 
         <item name="android:fontFamily">@font/acherusferal_light</item>
     </style>
+    <style name="normaltxt_10sp_RobotoBlack">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
     <style name="normaltxt_10sp_MediumItalic">
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">@color/black</item>
@@ -276,11 +385,13 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/acherusferal_semibold</item>
     </style>
-    <style name="normaltxt_15sp_Semibold">
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/acherusferal_semibold</item>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
     </style>
 
+    <style name="CustomBottomSheetStyle" parent="">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
 </resources>

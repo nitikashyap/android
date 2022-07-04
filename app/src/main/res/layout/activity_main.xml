@@ -4,152 +4,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0FFFFFFF"
+
     tools:context=".activity.Main.MainActivity">
 
 
-    <androidx.camera.view.PreviewView
-        android:id="@+id/viewFinder"
-        android:layout_width="match_parent"
+<!--    <androidx.camera.view.PreviewView-->
+<!--        android:id="@+id/viewFinder"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/view"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="#ff000000"-->
+<!--        android:visibility="gone"-->
+<!--        app:cardCornerRadius="24dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_item_lay"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="#00000000"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_item_lay"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/viewFinder">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView5"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_margin="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_sniper" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView6"-->
+
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_bullet" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView7"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_main_focus" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView8"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView6"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView6"-->
+<!--            app:srcCompat="@drawable/ic_zoom" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView9"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageView5"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageView5"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView5"-->
+<!--            app:srcCompat="@drawable/ic_bg_2" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView10"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView5"-->
+<!--            app:srcCompat="@drawable/ic_bg_2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:gravity="right"-->
+
+<!--            android:text="45"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView10"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView2"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageView10"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView10" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:gravity="right"-->
+<!--            android:text="Points"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="normal"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageView10"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="1st"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView11"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageView11"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageView11"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView11" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView11"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageView10"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView10"-->
+<!--            app:srcCompat="@drawable/ic_bg_2" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#ff000000"
-        android:visibility="gone"
-        app:cardCornerRadius="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_item_lay"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#00000000"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_item_lay"
-        app:layout_constraintTop_toTopOf="@+id/viewFinder">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_sniper" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_bullet" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_main_focus" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="80dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:srcCompat="@drawable/ic_zoom" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:srcCompat="@drawable/ic_bg_2" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="16dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView5"
-            app:srcCompat="@drawable/ic_bg_2" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="right"
-
-            android:text="45"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-            app:layout_constraintEnd_toStartOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/imageView10" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:gravity="right"
-            android:text="Points"
-            android:textColor="@color/white"
-            android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/textView" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1st"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-            app:layout_constraintEnd_toEndOf="@+id/imageView11"
-            app:layout_constraintStart_toStartOf="@+id/imageView11"
-            app:layout_constraintTop_toTopOf="@+id/imageView11" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toBottomOf="@+id/imageView10"
-            app:srcCompat="@drawable/ic_bg_2" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
