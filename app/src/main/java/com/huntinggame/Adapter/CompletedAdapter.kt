@@ -1,11 +1,13 @@
 package com.huntinggame.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
 import com.huntinggame.Modal.CurrentModal
+import com.huntinggame.activity.LeaderBoard.LeaderBoardActivity
 import com.huntinggame.databinding.CompletedItemBinding
 import com.huntinggame.databinding.CurrentItemBinding
 
@@ -36,7 +38,8 @@ class CompletedAdapter(
 //        holder.mView.textView27.text = completed[position].qty
 //        holder.mView.textView28.text = completed[position].date
         holder.mView.imageView35.setOnClickListener {
-            onPress.clickOn(isClick = true, position)
+           // con.startActivity(Intent(con, LeaderBoardActivity::class.java))
+       onPress.clickOn(isClick = true, position)
         }
 
     }

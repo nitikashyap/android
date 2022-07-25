@@ -36,14 +36,13 @@ class GameChatFragment : Fragment(), GameChatAdapter.OnClickItem {
         bin.gamechatToolbar.ivEdit.visibility = View.VISIBLE
 
 
-
-        gamechatModal.add(GameChatModal(R.drawable.group_140, "Alex Ensina", "Thanks!", "Thursday"))
-        gamechatModal.add(GameChatModal(R.drawable.group_141, "Turkey Hunt 2021", "We get the idea...", "Tuesday"))
-        gamechatModal.add(GameChatModal(R.drawable.group_140, "Karl Xie", "We contacted you...", "Saturday"))
+        gamechatModal.add(GameChatModal(R.drawable.group_140, "Shilpy rai", "Thanks!", "Thursday"))
+        gamechatModal.add(GameChatModal(R.drawable.group_141, "Lalita pal", "We get the idea...", "Tuesday"))
+        gamechatModal.add(GameChatModal(R.drawable.group_140, "Kavita Garg", "We contacted you...", "Saturday"))
         gamechatModal.add(GameChatModal(R.drawable.group_141, "Duck Hunt 2020", "Thank you kindly friends!", "Sunday"))
         gamechatModal.add(GameChatModal(R.drawable.group_141, "deluccio", "Here’s the PSD...", "October 08"))
         gamechatModal.add(GameChatModal(R.drawable.group_140, "blockscrypto", "Sure, let us know...", "October 06"))
-        gamechatModal.add(GameChatModal(R.drawable.group_140, "Himanshu", "Hii", "Sunday"))
+        gamechatModal.add(GameChatModal(R.drawable.group_140, "Shivangi rai", "Hii", "Sunday"))
         gamechatModal.add(GameChatModal(R.drawable.group_140, "Himanshu", "Hii", "Sunday"))
 //        gamechatModal.add(GameChatModal(R.drawable.group_6, "Himanshu", "Hii", "Sunday"))
 //        gamechatModal.add(GameChatModal(R.drawable.group_6, "Himanshu", "Hii", "Sunday"))
@@ -52,8 +51,7 @@ class GameChatFragment : Fragment(), GameChatAdapter.OnClickItem {
 
 
         GameChatAdapter(this.requireContext(), gamechatModal,this).apply {
-            bin.rcyGameChat.layoutManager =
-                LinearLayoutManager(this@GameChatFragment.requireContext())
+            bin.rcyGameChat.layoutManager = LinearLayoutManager(this@GameChatFragment.requireContext())
             bin.rcyGameChat.adapter = this
         }
     }

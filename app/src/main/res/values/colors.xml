@@ -12,9 +12,9 @@
     <color name="grey">#486A6D73</color>
     <color name="edittext">#8d8d8d</color>
     <color name="dark_grey">#717171</color>
-    
-    
-    
+
+
+    <color name="disable_forground">#eeeeee</color>
     <color name="disable_forground_grey">#42221f1f</color>
     <color name="disable_thumb_grey">#FF000000</color>
     <color name="enable_thumb_green">#46bdbf</color>

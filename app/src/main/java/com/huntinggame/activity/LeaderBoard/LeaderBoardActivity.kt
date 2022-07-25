@@ -1,18 +1,23 @@
 package com.huntinggame.activity.LeaderBoard
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.huntinggame.Adapter.LeaderAdapter
 import com.huntinggame.Adapter.LeaderDetailsAdapter
 import com.huntinggame.Modal.LeaderDetailsModal
 import com.huntinggame.Modal.LeaderModal
 import com.huntinggame.R
+import com.huntinggame.activity.CurrentLeaderBoardActivity
+import com.huntinggame.activity.Main.MainActivity
 import com.huntinggame.databinding.ActivityLeaderBoardBinding
 
 class LeaderBoardActivity : AppCompatActivity() {
     lateinit var bin: ActivityLeaderBoardBinding
+    lateinit var imageView37: ImageView
     private var leaderModal = ArrayList<LeaderModal>()
     private var leaderdetailsModal = ArrayList<LeaderDetailsModal>()
 
@@ -25,6 +30,7 @@ class LeaderBoardActivity : AppCompatActivity() {
     }
 
     private fun initView() {
+        imageView37=findViewById(R.id.imageView37)
         bin.leaderToolbar.tvName.text = "LEADERBOARD"
         bin.leaderToolbar.ivBackImg.visibility = View.VISIBLE
         leaderModal.add(
@@ -92,6 +98,11 @@ class LeaderBoardActivity : AppCompatActivity() {
 //                LinearLayoutManager(this@LeaderBoardActivity)
 //            bin.rcyLeaderDetails.adapter = this
 //        }
+
+
+        imageView37.setOnClickListener {
+            startActivity(Intent(this, CurrentLeaderBoardActivity::class.java))
+        }
 
     }
 

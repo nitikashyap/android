@@ -74,8 +74,7 @@ class HuntingFragment : Fragment(), CompletedAdapter.OnClickItem {
 //        )
 
         CurrentAdapter(this.requireContext(), currentModal).apply {
-            bin.rcyCurrent.layoutManager =
-                LinearLayoutManager(this@HuntingFragment.requireContext())
+            bin.rcyCurrent.layoutManager = LinearLayoutManager(this@HuntingFragment.requireContext())
             bin.rcyCurrent.adapter = this
         }
         FutureAdapter(this.requireContext(), currentModal).apply {
@@ -83,8 +82,7 @@ class HuntingFragment : Fragment(), CompletedAdapter.OnClickItem {
             bin.rcuFuture.adapter = this
         }
         CompletedAdapter(this.requireContext(), currentModal, this).apply {
-            bin.rcyCompleted.layoutManager =
-                LinearLayoutManager(this@HuntingFragment.requireContext())
+            bin.rcyCompleted.layoutManager = LinearLayoutManager(this@HuntingFragment.requireContext())
             bin.rcyCompleted.adapter = this
         }
 
@@ -107,7 +105,6 @@ class HuntingFragment : Fragment(), CompletedAdapter.OnClickItem {
                 bin.tvHide.text = "Hide"
             }
         }
-
 
     }
 

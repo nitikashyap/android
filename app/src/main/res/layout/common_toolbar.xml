@@ -19,7 +19,6 @@
             android:id="@+id/ivBackImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backimage" />
@@ -29,9 +28,8 @@
             style="@style/normaltxt_16sp_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="24dp"
-            android:text="Hunting"
             android:textColor="#4b4d4f"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

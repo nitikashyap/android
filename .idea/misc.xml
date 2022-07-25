@@ -3,20 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.221875" />
+        <entry key="app/src/main/res/drawable/bubble_left_tail.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/bubble_right_tail.xml" value="0.145" />
+        <entry key="app/src/main/res/drawable/buttonborder.xml" value="0.1795" />
         <entry key="app/src/main/res/drawable/drawable_edittext_bg.xml" value="0.2095" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.321" />
+        <entry key="app/src/main/res/drawable/ic_binocular_nonactive_new.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_calbig.xml" value="0.2015" />
         <entry key="app/src/main/res/drawable/ic_focusbig.xml" value="0.2555" />
         <entry key="app/src/main/res/drawable/ic_group_185.xml" value="0.2095" />
         <entry key="app/src/main/res/drawable/ic_group_271.xml" value="0.287" />
         <entry key="app/src/main/res/drawable/left_right_round_coner_bg.xml" value="0.2095" />
         <entry key="app/src/main/res/drawable/yellow_bg.xml" value="0.2225" />
+        <entry key="app/src/main/res/layout-land/fragment_focus.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_add_player_screen.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_code_verification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_completed_leader_board.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/activity_create_game.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_current_leader_board.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_friend.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_game_chat_details.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_game_chat_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_guest_login.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/activity_hunting_game.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_leader_board.xml" value="0.5" />
@@ -29,11 +36,13 @@
         <entry key="app/src/main/res/layout/activity_verify.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/add_player_screen_item.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/bottom_nav_item_lay.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/buttonborder.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/chat_adapter.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/common_toolbar.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/completed_item.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/current_item.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/do_you_accept_bottom_sheet.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/fragment_focus.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/fragment_focus.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_game_chat.xml" value="0.3411458333333333" />
         <entry key="app/src/main/res/layout/fragment_hunting.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_leader.xml" value="0.5" />

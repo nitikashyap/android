@@ -5,10 +5,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.huntinggame.Modal.LeaderDetailsModal
+import com.huntinggame.Modal.LeaderDetailsModalNew
 import com.huntinggame.Modal.LeaderModal
 import com.huntinggame.databinding.LeaderDetailsItemBinding
 
-class LeaderDetailsAdapter(val con: Context, val leaderDetails: ArrayList<LeaderDetailsModal>) :
+class LeaderDetailsAdapter(val con: Context, val leaderDetails: ArrayList<LeaderDetailsModalNew>) :
     RecyclerView.Adapter<LeaderDetailsAdapter.MyViewHolder>() {
     class MyViewHolder(val mView: LeaderDetailsItemBinding) : RecyclerView.ViewHolder(mView.root)
 
@@ -28,6 +29,7 @@ class LeaderDetailsAdapter(val con: Context, val leaderDetails: ArrayList<Leader
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
        holder.mView.textView38.text = leaderDetails[position].target
+       holder.mView.textView41.text = leaderDetails[position].scope
         holder.mView.textView39.text = leaderDetails[position].point
         holder.mView.textView40.text = leaderDetails[position].time
 

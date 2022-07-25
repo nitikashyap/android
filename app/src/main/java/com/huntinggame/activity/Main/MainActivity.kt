@@ -42,6 +42,7 @@ import okhttp3.RequestBody
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.os.Environment
 import android.os.Handler
 import android.os.Looper
@@ -54,11 +55,11 @@ import androidx.fragment.app.Fragment
 import butterknife.BindView
 import com.huntinggame.Fragment.*
 import com.huntinggame.activity.CreateGame.CreateGameActivity
-import com.huntinggame.databinding.GameChatItemBinding
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_hunting.*
 import java.io.FileOutputStream
 import java.io.OutputStream
+import android.content.res.Configuration as Configuration1
 
 
 class MainActivity : AppCompatActivity() {
@@ -83,6 +84,12 @@ class MainActivity : AppCompatActivity() {
             setContentView(bin.root)
             initView()
             lstnr()
+
+
+
+
+
+
 //        if (allPermissionsGranted()) {
 //            startCamera()
 //        } else {
@@ -98,6 +105,21 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+     override fun onConfigurationChanged(newConfig: android.content.res.Configuration) {
+        super.onConfigurationChanged(newConfig)
+
+        if(newConfig.orientation ==android.content.res.Configuration.ORIENTATION_LANDSCAPE){
+            getActionBar()?.hide()
+            view.visibility = View.GONE
+            bin.bottomNavItemLay.verctor.visibility =  View.VISIBLE
+        }
+        else if(newConfig.orientation ==android.content.res.Configuration.ORIENTATION_PORTRAIT) {
+            getActionBar()?.show()
+            view.visibility = View.VISIBLE
+            bin.bottomNavItemLay.verctor.visibility =  View.GONE
+        }
+     }
 
 //
 //    private fun apiResponse() {
@@ -368,6 +390,11 @@ class MainActivity : AppCompatActivity() {
 
 
         private fun initView() {
+
+
+
+
+
             ///Himanshu Code
 //            if (intent.getBooleanExtra("himanshu",false)){
 //               // childmain.visibility =View.VISIBLE
@@ -407,6 +434,26 @@ class MainActivity : AppCompatActivity() {
 
         private fun lstnr() {
 
+            fun onConfigurationChanged(newConfig: Configuration1?) {
+                newConfig?.let { super.onConfigurationChanged(it) }
+                if (newConfig != null) {
+                    if (newConfig.orientation == Configuration1.ORIENTATION_LANDSCAPE) {
+
+//                        Handler().postDelayed({
+//                            otrosScrollView.fullScroll(ScrollView.FOCUS_UP)
+//                        },600)
+
+                    } else if (newConfig.orientation == Configuration1.ORIENTATION_PORTRAIT) {
+
+//                        Handler().postDelayed({
+//                            otrosScrollView.fullScroll(ScrollView.FOCUS_UP)
+//                        },600)
+
+                    }
+                }
+            }
+
+
         }
 
         private fun replaceFrag(frag: Fragment, nameTag: String, bundle: Bundle?) {
@@ -419,11 +466,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         private fun prepareMovieData() {
+
+            bin.bottomNavItemLay.ivFocus
             bin.bottomNavItemLay.ivCal.setImageDrawable(
-                ContextCompat.getDrawable(
-                    this,
-                    R.drawable.ic_calbig
-                )
+                ContextCompat.getDrawable(this, R.drawable.ic_calbig)
             )
 
             ObjectAnimator.ofFloat(bin.bottomNavItemLay.ivCal, "translationY", -60f)
@@ -433,7 +479,6 @@ class MainActivity : AppCompatActivity() {
                 }
             previousSelectedRngeID = bin.bottomNavItemLay.ivCal.id
             previousSelectedRngeIcon = bin.bottomNavItemLay.ivCal.drawable
-
 
 
             bin.bottomNavItemLay.ivCal.setOnClickListener {
@@ -454,11 +499,11 @@ class MainActivity : AppCompatActivity() {
                 replaceFrag(chatFragment, "gamechatFrag", null)
             }
             bin.bottomNavItemLay.ivFocus.setOnClickListener {
-                make_range_selected_one(
-                    bin.bottomNavItemLay.ivFocus,
-                    ContextCompat.getDrawable(this, R.drawable.ic_focusbig)
+                make_range_selected_one(bin.bottomNavItemLay.ivFocus,
+                    ContextCompat.getDrawable(this, R.drawable.ic_binocular_new)
                 )
                 val focusFragment = FocusFragment()
+
                 replaceFrag(focusFragment, "focusFrag", null)
             }
             bin.bottomNavItemLay.ivTrpy.setOnClickListener {
@@ -510,7 +555,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 bin.bottomNavItemLay.ivFocus.id -> {
-                    findViewById<ImageView>(previousSelectedRngeID).setImageResource(R.drawable.ic_focus)
+                    findViewById<ImageView>(previousSelectedRngeID).setImageResource(R.drawable.ic_binocular_nonactive_new)
 
                 }
                 bin.bottomNavItemLay.ivTrpy.id -> {
@@ -547,6 +592,27 @@ class MainActivity : AppCompatActivity() {
 
         }, 2000)
     }
+
+    override fun onResume() {
+        super.onResume()
+
+         fun onConfigurationChanged(newConfig: android.content.res.Configuration) {
+            super.onConfigurationChanged(newConfig)
+
+            if(newConfig.orientation ==android.content.res.Configuration.ORIENTATION_LANDSCAPE){
+                getActionBar()?.hide()
+                view.visibility = View.GONE
+                bin.bottomNavItemLay.verctor.visibility =  View.VISIBLE
+            }
+            else if(newConfig.orientation ==android.content.res.Configuration.ORIENTATION_PORTRAIT) {
+                getActionBar()?.show()
+                view.visibility = View.VISIBLE
+            }
+        }
+    }
+
+
+
     }
 
 

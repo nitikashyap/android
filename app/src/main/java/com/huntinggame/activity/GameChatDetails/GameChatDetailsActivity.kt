@@ -8,6 +8,7 @@ import com.huntinggame.databinding.ActivityGameChatDetailsBinding
 
 class GameChatDetailsActivity : AppCompatActivity() {
     lateinit var bin:ActivityGameChatDetailsBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bin = ActivityGameChatDetailsBinding.inflate(layoutInflater)
